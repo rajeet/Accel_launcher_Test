@@ -1,4 +1,5 @@
-# Accel Launcher
+# Accel Launcher Test
+### Accel Launcher
 
 Accel Launcher helps accelerate your productivity by providing a light and simple home interface and arranges your phone's screens to make quick and easy use.
 
@@ -7,5 +8,4 @@ Accel recognizes trends of use by tracking your most recently used apps and feat
 Accel understands your time matters and is design to save precious time and battery power.
 
 
-### Accel Launcher Test
-- This is Accel Launcher Tests Case.
+### This is Accel Launcher Tests Case.
