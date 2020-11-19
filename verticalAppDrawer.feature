@@ -1,4 +1,6 @@
 Feature: Vertical view over the app drawer
+  
+  Description: User can enjoy vertical as well as horizontal app drawer view
 
   Scenario: Getting on to the vertical app drawer
     Given user is on homescreen
