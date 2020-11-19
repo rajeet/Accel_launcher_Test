@@ -1,4 +1,4 @@
-Feature: As a user   all the installed app could be made visible or invisible
+Feature: As a user all the installed app could be made visible or invisible
 
   Background: user is already on the app drawer
 
