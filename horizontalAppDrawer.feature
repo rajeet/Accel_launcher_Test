@@ -7,6 +7,7 @@ Feature: Horizontal feature over the app drawer
         When user presses menu
         Then user sees Horizontal app drawer
         And validates with "All Apps"
+        And user sees page indicator at bottom of app drawer
 
     Scenario: Search on app drawer
         Given user is on app drawer
