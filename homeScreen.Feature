@@ -1,4 +1,4 @@
-Feature: As a user user should be able to see favourite icons including App drawer menu on primary home screen
+Feature: As a user, user should be able to see favourite icons including App drawer menu on primary home screen
 
   Scenario: Phone,Messaging,App Drawer,Camera and Chrome as favourite apps
     Given User is on the home screen

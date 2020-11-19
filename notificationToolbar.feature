@@ -1,7 +1,7 @@
 
 #Sprint 5
 Feature: Notification tool bar
- On launching the accel launher user should see the notification tool bar on notification bar of application
+ On launching the accel launcher user should see the notification tool bar on notification bar of application
 
 Scenario: Notification bar should contain search,wifi,data,flashlight and more
 Given user launches the accel launcher
