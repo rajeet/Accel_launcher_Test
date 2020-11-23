@@ -9,8 +9,8 @@ Accel understands your time matters and is design to save precious time and batt
 
 
 ### This is Accel Launcher Tests Case.
-This is test case for Accel Launcher written in Gherkin programming language.
-    * Includes Test cases for
+    This is test case for Accel Launcher written in Gherkin programming language. Include test case for following:
+    ___________________________________________
         - Onboarding
         - Nightmode
         - Homescreen Gesture
