@@ -10,12 +10,12 @@ Accel understands your time matters and is design to save precious time and batt
 
 ### This is Accel Launcher Tests Case.
     Includes Test cases for
-        * [Onboarding]
-        * [Nightmode]
-        * [Homescreen Gesture]
-        * [Search ]
-        * [App Drawer]
-        * [Dock]
-        * [Homescreen]
-        * [Battery Booster]
-        * [Notification Toolbar]
+        - Onboarding
+        - Nightmode
+        - Homescreen Gesture
+        - Search 
+        - App Drawer
+        - Dock
+        - Homescreen
+        - Battery Booster
+        - Notification Toolbar
