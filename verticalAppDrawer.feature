@@ -36,3 +36,31 @@ Feature: Vertical view over the app drawer
     Given user is on app drawer
     When user checks for the alphabets
     Then use should only see those letter with at least one alphabet on it
+
+  #Application with no quick shortcut from tap and hold
+  Scenario: Tap and hold on app icon should popup app shortcut else app info.
+    Given user is on app drawer
+    When user tap and hold facebook application
+    Then App info popup should be displayed
+
+  #Application with quick shortcut from tap and hold
+  Scenario: Tap and hold on app with quick shortcut
+    Given user is on app drawer 
+    When user taps and hold on clock app icon 
+    Then quick shortcut popup should be displayed
+    And app info also should be displayed 
+
+  #User can add widget to homescreen from app drawer
+  Scenario: User should be able to add widget from app drawer if available
+    Given User is on app drawer
+    When user taps and hold on clock app
+    Then widget logo should be displayed on popoup 
+    When user taps on widget button 
+    Then user should see the available widget
+    When user sees an available widget
+    Then user should drag the widget to homescreen
+
+  Scenario: User can use recently used app in app drawer 
+    Given when User is on Home screen
+    When user open app drawer 
+    Then user can use recently used app quickly
