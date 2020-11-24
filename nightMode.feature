@@ -49,6 +49,7 @@ Feature: Night Mode for Accel Launcher
         When user set time to "6:00 am"
         Then Nightmode will activate after "7:00 pm" in evening to "6:00 am" in the morning.
 
+  
 
 
 

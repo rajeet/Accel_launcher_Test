@@ -54,13 +54,7 @@ User on the Accel Launcher will have dock on homescreen on bottom
         And turn "On" app drawer icon 
         Then the app drawer icon on dock will get back on dock
 
-    Scenario: User can manage number of applications on dock
-        Given User is on Dock settings on Accel Launcher settings 
-        When user tap on Dock size
-        Then user should see list of number of application option.
-        And user should select number of application to display on dock
-
-    # dock applications settings
+    #dock applications settings
     Scenario: User could view app info dock application
         Given User is on Home Screen
         When user tap and hold on application
@@ -70,6 +64,20 @@ User on the Accel Launcher will have dock on homescreen on bottom
         When user sees app info popup 
         Then user tap on app info 
         And user should be redirected to application information page
+
+
+    #User can manage number of icons on dock 
+    Scenario: User can manage custom number of applications on dock 
+        Given User is on dock settings on Accel Launcher settings
+        And App drawer icon is turned Off
+        When user tap on dock size 
+        Then user can have 2 to 7 applications on dock
+
+        Given User is on dock settings on Accel Launcher settings
+        And App drawer icon is turned on 
+        When user tap on dock size 
+        Then user can have app 3, 5, 7 applications on dock combining app drawer icon
+
 
 
 

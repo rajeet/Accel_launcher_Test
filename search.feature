@@ -1,5 +1,5 @@
-Feature: Search bar on the home screen for the Accel launcher
-  As a user, search bar should be made available on the home screen and should be activated with tap or swipe up
+Feature: Search bar for the Accel launcher
+  As a user, search bar should be made available on the home screen and should be activated with tap on search or swipe up
 
   Description: User launches the Accel launcher
   And each bar could be accessed form home screen
@@ -8,7 +8,7 @@ Feature: Search bar on the home screen for the Accel launcher
     Given User is on the home screen
     When User launches the Accel launcher
     Then User sees Search bar
-    And Search bar consist of placeholder "Seach apps,contacts"
+    And Search bar consist of placeholder "Seach apps,contacts..."
 
   Scenario: Focus on the search bar for very first time
     When User taps on the search bar field
@@ -79,7 +79,17 @@ Feature: Search bar on the home screen for the Accel launcher
     When user taps 'Done' from keyboard
     Then User should stay on search screen
 
+  #using Web Search while being offline
+  Scenario: Web search while being away from internet.
+    Given User device is not connected to internet
+    And user taps search bar
+    When Search with <characters>
+    Then User should see <web> , <app>, <contacts>, <settings>
 
+    Examples:
+    | characters | Web                      | app                     | contacts | settings                                   |
+    | 'd'        | No internet connection   | dropbox, drive, deezer  | Downey   | 'Device info' 'Display' 'Sound and Volume' |
+    | 'x'        | No internet connection   | dropbox                 | -        | -                                          |
 
 
 
